@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script 
+
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></scrip
+
+t>
+<script> 
+$(document).ready(function(){
+    $(document).on("contextmenu",function(e){
+        if(e.target.nodeName != "INPUT" && e.target.nodeName != "TEXTAREA")
+             e.preventDefault();
+     });
+ });
+$(document).ready(function()
+{
+    $("#d1").click(function(){
+        $("#d1").animate({left: '250px', opacity: '0.4'},{duration: 200,queue: 
+
+false});
+    });
+	
+	
+	$("#d2").click(function(){
+        $("#d2").animate({left: '300px',opacity: '0.6'});
+    });
+	$("#d3").click(function(){
+        $("#d3").animate({left: '350px',opacity: '0.8'});
+    });
+	$( "button" ).click(function() {
+         location.reload(true);
+});
+});
+</script> 
+</head>
+<body>
+<p>Aditya</p>
+<button>Start Game</button>
+<div id="d1" 
+
+style="background:#98bf20;height:20px;width:100px;position:absolute;top:50px;"
+
+>level1</div>
+<div id="d2" 
+
+style="background:#98bf21;height:20px;width:100px;position:absolute;top:90px;"
+
+>level2</div>
+<div id="d3" 
+
+style="background:#98bf22;height:20px;width:100px;position:absolute;top:130px;
+
+">level3</div>
+</body>
+</html>
